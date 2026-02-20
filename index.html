@@ -36,7 +36,7 @@
         <section class="parte-inferior">
           <label class="campo-grupo">
             <span class="texto-medio-azul">Qtde.</span>
-            <input class="quantidade-input" id="quantidade" type="number" placeholder="100">
+            <input class="quantidade-input" id="quantidade" type="number" placeholder="0">
           </label>
 
           <section class="botoes-wrapper">
@@ -45,6 +45,37 @@
           </section>
         </section>
       </form>
+
+      <!-- ATIVIDADE EXTRA -->
+      <form class="formulario-usuario">
+        <section class="parte-inferior">
+          <div class="campo-grupo">
+            <span class="texto-medio-azul">Nome</span>
+            <input id="nome" type="text" placeholder="Nome do cliente">
+          </div>
+          <div class="campo-grupo">
+            <span class="texto-medio-azul">Idade</span>
+            <input id="idade" type="number" placeholder="0">
+          </div>
+          <p id="cliente-info"></p>
+          <section class="botoes-wrapper">
+            <button onclick="adicionarCliente()" type="button" class="botao-form botao-adicionar">Cadastrar</button>
+          </section>
+        </section>
+      </form>
+
+      <h2>Soma de números</h2>
+      <input type="number" id="primeiro-numero">
+      <input type="number" id="segundo-numero">
+      <button onclick="somarNumeros()" type="button" class="botao-form botao-adicionar">Somar</button>
+
+      <h2>Split da String</h2>
+      <input type="text" id="frase-input" placeholder="Digite uma frase">
+      <button onclick="splitFrase()" type="button" class="botao-form botao-adicionar">Split</button>
+
+      <h2>Split de números</h2>
+      <input type="text" id="input-numeros" placeholder="Digite numeros separados por vírgula">
+      <button onclick="splitNumeros()" type="button" class="botao-form botao-adicionar">Split Numbers</button>
     </section>
     <section class="carrinho">
       <img src="./assets/carrinho-cinza.svg" alt="Imagem de um carrinho de compras cinza">
